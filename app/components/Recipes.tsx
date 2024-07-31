@@ -14,7 +14,7 @@ import Recipe from './Recipe'
 
 const Recipes = () => {
   return (
-    <section className='flex flex-col w-full h-auto items-center justify-center text-center gap-24'>
+    <section className='flex flex-col w-full h-auto items-center justify-center text-center gap-24 mb-[143px]'>
         <div className="recipes-header flex flex-col w-[60%] gap-6 items-center">
             <h2 className='font-semibold text-5xl leading-[58.09px] -tracking-[4%]'>Simple and tasty recipes</h2>
             <p className='leading-7 w-[90%]'>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
