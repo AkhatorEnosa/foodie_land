@@ -3,6 +3,9 @@ import Navbar from "../Hompage/Navbar";
 import Footer from "../Hompage/Footer";
 import Main from "./Main";
 import Ingredients from "./Ingredients";
+import Directions from "./Directions";
+import ContactUs from "../Hompage/ContactUs";
+import OtherRecipeBottom from "./OtherRecipeBottom";
 
 export default function Home() {
   return (
@@ -10,7 +13,10 @@ export default function Home() {
         <Navbar />
         <Main />
         <Ingredients />
-        {/* <Footer/> */}
+        <Directions />
+        <ContactUs />
+        <OtherRecipeBottom />
+        <Footer/>
     </main>
   );
 }

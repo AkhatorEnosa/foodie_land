@@ -9,7 +9,7 @@ type OtherRecipeProps = {
 
 const OtherRecipe = ({imgSrc, title, author} : OtherRecipeProps) => {
   return (
-    <div className='relative flex gap-6 w-full items-center overflow-clip'>
+    <div className='relative flex gap-6 w-full items-center overflow-clip cursor-pointer'>
         <div className='flex justify-center items-center w-[180px] h-[120px] rounded-[20px] overflow-clip'>
             <Image src={imgSrc} width={180} height={174.72} className='z-30' alt='recipe image'/>
         </div>
