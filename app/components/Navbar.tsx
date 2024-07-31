@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram } from 'react-icons/fa6'
 
 const Navbar = () => {
   return (
-    <section role='navbar' className='w-full flex justify-between items-center px-20 mb-20'>
+    <section role='navbar' className='w-full flex justify-between items-center mb-20'>
         <h1 className='logo text-2xl font-normal leading-[30px]'>Foodieland<span className='text-orange-500'>.</span></h1>
         <ul className='flex justify-betweeen items-center gap-[60px] font-medium text-base leading-[19.38px] -tracking-[2%]'>
             <li className='cursor-pointer hover:underline'>Home</li>

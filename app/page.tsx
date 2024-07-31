@@ -1,12 +1,16 @@
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Category from "./components/Category";
+import Recipes from "./components/Recipes";
 
 export default function Home() {
   return (
-    <main className="flex w-screen flex-col items-center py-10">
+    <main className="flex w-screen h-auto flex-col items-center py-10 px-20 leading-[16.94px] -tracking-[2%] ">
       <Navbar />
       <Hero />
+      <Category />
+      <Recipes />
     </main>
   );
 }

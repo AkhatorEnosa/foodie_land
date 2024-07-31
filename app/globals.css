@@ -10,3 +10,65 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.ad-bold {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+}
+
+.item-image-1 {
+  filter: drop-shadow(10px 15px 4px #00000016);
+}
+
+.item-image-2 {
+  filter: drop-shadow(10px 15px 4px #00ff3716);
+}
+
+.item-image-3 {
+  filter: drop-shadow(10px 15px 4px #ff000016);
+}
+
+.item-image-4 {
+  filter: drop-shadow(10px 15px 4px #fffb0016);
+}
+
+.item-image-5 {
+  filter: drop-shadow(10px 15px 4px #fbff0016);
+}
+
+.item-image-6 {
+  filter: drop-shadow(10px 15px 4px #ff000016);
+}
+
+.category-item-1 {
+  background: linear-gradient(180deg, rgba(112, 130, 70, 0) 0%, rgba(112, 130, 70, 0.1) 100%);
+}
+
+.category-item-2 {
+  background: linear-gradient(180deg, rgba(108, 198, 63, 0) 0%, rgba(108, 198, 63, 0.1) 100%);
+}
+
+.category-item-3 {
+  background: linear-gradient(180deg, rgba(204, 38, 27, 0) 0%, rgba(204, 38, 27, 0.1) 100%);
+}
+
+.category-item-4 {
+  background: linear-gradient(180deg, rgba(240, 158, 0, 0) 0%, rgba(240, 158, 0, 0.1) 100%);
+}
+
+.category-item-5 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+.category-item-6 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+.recipe {
+  background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+  border-radius: 30px;
+}
+
+.ad {
+  background: linear-gradient(180deg, #357355 0%, #1D483B 100%);
+}

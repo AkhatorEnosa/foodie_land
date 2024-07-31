@@ -3,13 +3,13 @@ import React from 'react'
 import Hotrecipes from '../../public/images/slider-item-image.png'
 import PersonSlider from '../../public/images/slider-person.png'
 import Badge from '../../public/images/badge.png'
-import SliderImage from '../../public/images/baked-chicken-wings-asian-style-tomatoes-sauce-plate 1.jpeg'
+import SliderImage from '../../public/images/baked-chicken-wings-asian-style-tomatoes-sauce-plate 1 2.jpeg'
 import Details from './Details'
 import { IoPlayCircle, IoPlayCircleOutline } from 'react-icons/io5'
 
 const Slider = () => {
   return (
-    <div className='relative slider w-[90%] -tracking-[2%] leading-[16.94px] rounded-[60px] bg-blue-300 overflow-hidden'>
+    <div className='relative slider w-[90%] leading-[16.94px] rounded-[60px] overflow-hidden'>
         <div className='absolute w-[620px] h-[640px] p-[50px] col-span-1 bg-[#E7FAFE] rounded-l-[60px] z-30'>
             <div className='w-fit flex justify-between font-semibold text-sm mb-8 gap-3 px-5 py-[10px] bg-white rounded-[30px]'>
                 <Image src={Hotrecipes} width={24} height={24} alt='hot recipes' className='w-6 h-6'/> 
@@ -20,7 +20,7 @@ const Slider = () => {
                 <p className='leading-7 mb-[6px]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae magnam excepturi accusantium aliquam laudantium quas accusamus veniam! Quod facilis eveniet laboriosam quidem.</p>
                 <div className='flex gap-4 w-fit'>
                     <Details title='30 Minutes' background='bg-black/5'/>
-                    <Details title='something else' background='bg-black/5'/>
+                    <Details title='Chicken' background='bg-black/5'/>
                 </div>
             </div>
             <div className='w-full flex justify-between items-center'>
