@@ -72,3 +72,15 @@
 .ad {
   background: linear-gradient(180deg, #357355 0%, #1D483B 100%);
 }
+
+.insta-posts {
+  background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+
+}
+
+.section-heading {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58.09px;
+  letter-spacing: -0.04em;
+}
