@@ -42,6 +42,7 @@ const Recipes = () => {
              query:{
                 title: recipe.title,
                 imgSrc: recipe.imgSrc,
+                detailsTitle2: recipe.detailsTitle2
              }
         }} key={recipe.id}>
             <Recipe
@@ -68,6 +69,7 @@ const Recipes = () => {
              query:{
                 title: recipe.title,
                 imgSrc: recipe.imgSrc,
+                detailsTitle2: recipe.detailsTitle2
              }
         }} key={recipe.id}>
             <Recipe
