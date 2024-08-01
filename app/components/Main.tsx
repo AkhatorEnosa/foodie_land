@@ -11,7 +11,7 @@ import { useSearchParams } from 'next/navigation'
 
 const Main = () => {
     const searchParams = useSearchParams();
-    const img = searchParams.get('imgSrc') === null ? "" : searchParams.get('imgSrc');
+    const img = searchParams.get('imgSrc');
   return (
     <section id='main' className='w-full px-20 pb-20'>
         <div className='w-full flex justify-between mb-16'>
