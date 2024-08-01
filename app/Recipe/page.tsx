@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Main from "./Main";
-import Ingredients from "./Ingredients";
-import Directions from "./Directions";
+import Main from "../components/Main";
+import Ingredients from "../components/Ingredients";
+import Directions from "../components/Directions";
 import ContactUs from "../components/ContactUs";
-import OtherRecipeBottom from "./OtherRecipeBottom";
+import OtherRecipeBottom from "../components/OtherRecipeBottom";
 
 export default function Home() {
   return (

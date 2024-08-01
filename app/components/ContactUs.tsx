@@ -20,10 +20,10 @@ const ContactUs = () => {
                 </div>
             </div>
             <div className='absolute w-screen flex justify-between -bottom-36'>
-                <Image src={ImgLeft} width={409.54} height={400.08} className='relative rotate-[30deg] bottom-12'/>
+                <Image src={ImgLeft} width={409.54} height={400.08} alt='image' className='relative rotate-[30deg] bottom-12'/>
                 <div className='relative -bottom-11 -right-12'>
-                    <Image src={Rucola} width={90} height={90.96} className='absolute -left-32 top-6'/>
-                    <Image src={ImgRight} width={355.07} height={355.62}/>
+                    <Image src={Rucola} width={90} height={90.96} alt='image' className='absolute -left-32 top-6'/>
+                    <Image src={ImgRight} width={355.07} height={355.62} alt='image'/>
                 </div>
             </div>
         </div>
