@@ -9,9 +9,9 @@ import { FiPrinter, FiShare } from 'react-icons/fi'
 import { FaPlay } from 'react-icons/fa'
 import { useSearchParams } from 'next/navigation'
 
-
 const Main = () => {
-    const searchParams = useSearchParams(); 
+    const searchParams = useSearchParams();
+    const img = searchParams.get('imgSrc');
   return (
     <section id='main' className='w-full px-20 pb-20'>
         <div className='w-full flex justify-between mb-16'>
@@ -65,7 +65,7 @@ const Main = () => {
                 <div className='absolute text-[#181945] text-[32px] p-11 bg-white/80 z-50 rounded-full'>
                     <FaPlay/>
                 </div>
-                <Image src={searchParams.get('imgSrc')} width={915.21} height={623} alt='image' className='z-10'/>
+                <Image src={String(img)} width={915.21} height={623} alt='image' className='z-10'/>
             </div>
             <div className="info font-medium text-base leading-[21.78px] -tracking-[4%] p-8 bg-[#E7FAFE] rounded-[30px]">
                 <h1 className='font-semibold text-2xl leading-[29.05px]  mb-6'>Nutritional Information</h1>
