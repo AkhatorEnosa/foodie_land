@@ -4,10 +4,11 @@ import React, { useState } from 'react'
 import { RiCheckboxBlankCircleLine, RiCheckboxCircleFill } from 'react-icons/ri'
 
 const RecipeListItem = () => {
+    // initialise state
   const [check , setCheck] = useState(false)
 
   const handleCheck = () => {
-        setCheck(!check);
+        setCheck(!check); //toggle check state 
   }
   
   return (

@@ -12,6 +12,8 @@ const OtherRecipeBottom = () => {
 
           {MORERECIPE.filter((recipe, index) => index < 4).map((recipe) => (
 
+            // Link with url parameters for dynamic routing
+
             <Link href={{
                 pathname: `${recipe.id}`,
                 query:{

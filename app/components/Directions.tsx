@@ -1,7 +1,7 @@
 import React from 'react'
 import DirectionList from './DirectionList'
-// import DirectionImg from '/../public/images/directions-img.png'
 
+// Directions section
 const Directions = () => {
   return (
     <section className="w-full directions px-20 mb-12">

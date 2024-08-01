@@ -18,6 +18,8 @@ const Recipes = () => {
         {/* get recipes */}
         {RECIPE1PART1.map((recipe) => (
 
+
+            // Link with url parameters for dynamic routing
         <Link href={{
             pathname: `${recipe.id}`,
              query:{
@@ -37,6 +39,8 @@ const Recipes = () => {
             
         {RECIPE1PART2.map((recipe) => (
 
+
+            // Link with url parameters for dynamic routing
         <Link href={{
             pathname: `${recipe.id}`,
              query:{
@@ -64,6 +68,8 @@ const Recipes = () => {
             
         {RECIPE1PART3.map((recipe) => (
 
+
+            // Link with url parameters for dynamic routing
         <Link href={{
             pathname: `${recipe.id}`,
              query:{

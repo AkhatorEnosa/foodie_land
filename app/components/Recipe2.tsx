@@ -15,10 +15,11 @@ type RecipeProps = {
 
 const Recipe2 = ({imgSrc, title, detailsTitle1, detailsTitle2} : RecipeProps) => {
 
+    // initialise state
     const [like, setLike] = useState(false);
 
     const handleLike = () => {
-        setLike(!like);
+        setLike(!like);  //toggle like state 
     }
   return (
     <div className="recipe2 max-w-[290px] flex flex-col cursor-pointer group">

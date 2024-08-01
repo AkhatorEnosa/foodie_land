@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { FaHeart } from 'react-icons/fa'
 import Link from 'next/link';
 
+// type declaration
 type RecipeProps = {
     id: number,
     imgSrc: string,
@@ -16,11 +17,11 @@ type RecipeProps = {
 }
 
 const Recipe = ({id, imgSrc, title, detailsTitle1, detailsTitle2} : RecipeProps) => {
-
+    // initialise state
     const [like, setLike] = useState(false);
 
     const handleLike = () => {
-        setLike(!like);
+        setLike(!like); //toggle like state 
     }
   return (
     <div className="recipe max-w-[400px] px-4 pt-4 pb-8 flex flex-col gap-6 group cursor-pointer">

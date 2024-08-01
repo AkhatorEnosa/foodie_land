@@ -4,6 +4,8 @@ import ImgLeft from '../../public/images/kisspng-salad-salad-fresh-food-healthyl
 import ImgRight from '../../public/images/right-deliciousness.png'
 import Rucola from '../../public/images/rucola-png.png'
 
+
+//Contact us section
 const ContactUs = () => {
   return (
     <section className="contact-us w-full px-20 mb-[160px]">

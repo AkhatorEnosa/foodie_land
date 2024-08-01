@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
 
+
+// Footer section
 const Footer = () => {
   return (
     <footer className='w-full flex flex-col px-20 gap-24'>

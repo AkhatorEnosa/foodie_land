@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
+//declating types
 type CategoryProps = {
     itemImg: string,
     addClass: string,

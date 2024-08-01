@@ -9,9 +9,12 @@ import { FiPrinter, FiShare } from 'react-icons/fi'
 import { FaPlay } from 'react-icons/fa'
 import { useSearchParams } from 'next/navigation'
 
+// Main Content for the dynamic recipe page
 const Main = () => {
+    // getting parameters from url
     const searchParams = useSearchParams();
     const img = searchParams.get('imgSrc');
+    
   return (
     <section id='main' className='w-full px-20 pb-20'>
         <div className='w-full flex justify-between mb-16'>

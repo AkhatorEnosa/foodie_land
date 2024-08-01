@@ -12,9 +12,10 @@ const MoreRecipe = () => {
         </div>
 
         <div className="recipes w-full grid grid-cols-4 gap-10">
-            
+            {/* Iterate through MORERECIPE array then return something */}
             {MORERECIPE.map((recipe) => (
 
+            // Link with url parameters for dynamic routing
             <Link href={{
                 pathname: `${recipe.id}`,
                 query:{

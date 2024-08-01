@@ -6,6 +6,8 @@ import Insta3 from '../../public/images/ig3.png'
 import Insta4 from '../../public/images/ig4.png'
 import { FaInstagram } from 'react-icons/fa'
 
+
+// Instagram posts display section
 const InstaPosts = () => {
   return (
     <section className='w-full flex flex-col px-20 justify-center items-center py-20 gap-20 insta-posts'>

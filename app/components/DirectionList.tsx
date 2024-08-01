@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { RiCheckboxBlankCircleLine } from 'react-icons/ri'
 
-
+// types declaration
 type DirectionListProps  = {
     title: string,
     num: string,

@@ -3,6 +3,7 @@ import React from 'react'
 import { FaTwitter } from 'react-icons/fa'
 import { FaFacebookF, FaInstagram } from 'react-icons/fa6'
 
+//Navbar section
 const Navbar = () => {
   return (
     <section role='navbar' className='w-full flex justify-between px-20 items-center mb-20'>

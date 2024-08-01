@@ -1,14 +1,15 @@
 import React from 'react'
 import { PiForkKnifeFill, PiTimerFill } from 'react-icons/pi'
 
+// declaring types
 type detailsProps = {
     title1: string,
     title2: string,
-    // icon: string,
     background?: string 
     padding?: string 
 }
 
+// reusable component for recipe time and type
 const Details = ({ title1, title2, background, padding}: detailsProps) => {
   return (
     <div className={`w-fit flex gap-6 justify-center items-center ${padding} text-sm font-medium`}>
