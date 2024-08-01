@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { FaTwitter } from 'react-icons/fa'
 import { FaFacebookF, FaInstagram } from 'react-icons/fa6'
@@ -5,7 +6,9 @@ import { FaFacebookF, FaInstagram } from 'react-icons/fa6'
 const Navbar = () => {
   return (
     <section role='navbar' className='w-full flex justify-between px-20 items-center mb-20'>
+    <Link href='/'>
         <h1 className='logo text-2xl font-normal leading-[30px]'>Foodieland<span className='text-orange-500'>.</span></h1>
+    </Link>
         <ul className='flex justify-betweeen items-center gap-[60px] font-medium text-base leading-[19.38px] -tracking-[2%]'>
             <li className='cursor-pointer hover:underline'>Home</li>
             <li className='cursor-pointer hover:underline'>Recipe</li>

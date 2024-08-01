@@ -3,7 +3,7 @@ import React from 'react'
 import Hotrecipes from '../../public/images/slider-item-image.png'
 import PersonSlider from '../../public/images/slider-person.png'
 import Badge from '../../public/images/badge.png'
-import SliderImage from '../../public/images/baked-chicken-wings-asian-style-tomatoes-sauce-plate 1 2.jpeg'
+import SliderImage from '../../public/images/baked-chicken-wings-asian-style-tomatoes-sauce-plate 1.jpeg'
 import Details from './Details'
 import { IoPlayCircle, IoPlayCircleOutline } from 'react-icons/io5'
 

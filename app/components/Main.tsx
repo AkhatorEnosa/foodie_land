@@ -62,7 +62,7 @@ const Main = () => {
 
         <div className='flex justify-between items-center mb-20'>
             <div className='relative flex justify-center items-center w-[840px] h-[600px] overflow-clip rounded-[30px]'>
-                <div className='absolute text-[#181945] text-[32px] p-11 bg-white/80 z-50 rounded-full'>
+                <div className='absolute text-[#181945] text-[32px] hover:text-5xl p-11 bg-white/80 z-50 duration-200 transition-all rounded-full'>
                     <FaPlay/>
                 </div>
                 <Image src={String(img)} width={915.21} height={623} alt='image' className='z-10'/>
