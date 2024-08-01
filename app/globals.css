@@ -10,6 +10,11 @@
   font-weight: 400;
   font-style: normal;
 }
+ 
+/* width */
+.slider::-webkit-scrollbar {
+    opacity: 0;
+}
 
 .ad-bold {
   font-family: "Lobster", sans-serif;

@@ -3,7 +3,9 @@ import Slider from './Slider'
 
 const Hero = () => {
   return (
-    <section className='w-screen h-auto flex justify-center items-center gap-10 mb-[162px] overflow-scroll'>
+    <section className='slider w-full h-auto flex items-center snap-x snap-mandatory gap-10 mb-[162px] overflow-scroll'>
+        <Slider />
+        <Slider />
         <Slider />
     </section>
   )

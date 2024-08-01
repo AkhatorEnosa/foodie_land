@@ -9,13 +9,13 @@ import { IoPlayCircle, IoPlayCircleOutline } from 'react-icons/io5'
 
 const Slider = () => {
   return (
-    <div className='relative slider w-[90%] leading-[16.94px] rounded-[60px] overflow-hidden'>
-        <div className='absolute w-[620px] h-[640px] p-[50px] col-span-1 bg-[#E7FAFE] rounded-l-[60px] z-30'>
+    <div className='relative flex slide min-w-[90%] snap-always snap-center leading-[16.94px] rounded-[60px] overflow-x-hidden'>
+        <div className='absolute flex flex-col justify-center w-[620px] h-[640px] p-[50px] pb-[] col-span-1 bg-[#E7FAFE] rounded-l-[60px] z-30'>
             <div className='w-fit flex justify-between font-semibold text-sm mb-8 gap-3 px-5 py-[10px] bg-white rounded-[30px]'>
                 <Image src={Hotrecipes} width={24} height={24} alt='hot recipes' className='w-6 h-6'/> 
                 <span>Hot Recipes</span>
             </div>
-            <div className='w-full flex flex-col gap-6 mb-[104px]'>
+            <div className='w-full flex flex-col gap-6 pb-[105px]'>
                 <h1 className='font-semibold text-[64px] leading-[77.45px] -tracking-[4%]'>Spicy delicious chickens</h1>
                 <p className='leading-7 mb-[6px]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae magnam excepturi accusantium aliquam laudantium quas accusamus veniam! Quod facilis eveniet laboriosam quidem.</p>
                 <div className='flex gap-4 w-fit'>
@@ -30,13 +30,13 @@ const Slider = () => {
                         <p className='font-medium text-sm text-black/60'>15 March 2022</p>
                     </div>
                 </div>
-                <div className='flex justify-center items-center px-9 py-[18px] gap-[15px] bg-black text-white rounded-2xl'>
+                 <div role="button" className='flex justify-center items-center px-9 py-[18px] gap-[15px] bg-black text-white rounded-2xl'>
                     View Recipes
                     <IoPlayCircle className='w-6 h-6' />
                 </div>
             </div>
         </div>
-        <div className='relative flex w-full  bg-blue-300 justify-end z-10'>
+        <div className='relative flex w-full justify-end z-10'>
             <Image src={SliderImage} width={800} height={500} alt='slider main image' className='w-[982px] h-[640px]'/>
         </div>
         <div className='absolute w-full flex top-[50px] justify-center items-center z-50'>

@@ -20,7 +20,7 @@ const InstaPosts = () => {
             <Image src={Insta4} width={290} height={445.44} alt='instagram post'/>
         </div>
 
-        <div className='flex justify-center w-fit items-center px-9 py-[18px] gap-[15px] bg-black text-white rounded-2xl'>
+        <div role="button" className='flex justify-center w-fit items-center px-9 py-[18px] gap-[15px] bg-black text-white rounded-2xl'>
             Visit Our Instagram <FaInstagram className='text-[22px]'/>
         </div>
     </section>

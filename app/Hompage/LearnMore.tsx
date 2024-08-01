@@ -9,7 +9,7 @@ const LearnMore = () => {
             <h1 className='section-heading mb-6'>Everyone can be a <br/> chef in their own kitchen</h1>
             <p className='leading-7 mb-[72px] w-[90%] '>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do <br/> eiusmod tempor incididunt ut labore et dolore magna aliqut enim <br/> ad minim </p>
 
-            <div className='flex justify-center w-[180px] items-center px-9 py-[18px] gap-[15px] bg-black text-white rounded-2xl'>
+            <div role="button" className='flex justify-center w-[180px] items-center px-9 py-[18px] gap-[15px] bg-black text-white rounded-2xl'>
                 Learn More
             </div>
         </div>
