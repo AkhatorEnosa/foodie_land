@@ -6,12 +6,12 @@ import { FiPrinter, FiShare } from 'react-icons/fi'
 import RecipeImage1 from '../../public/images/recipe-img.png'
 import { FaPlay } from 'react-icons/fa'
 
-const Main = () => {
+const Main = ({heading} : {heading: string}) => {
   return (
     <section id='main' className='w-full px-20 pb-20'>
         <div className='w-full flex justify-between mb-16'>
             <div className='flex flex-col gap-12'>
-                <h1 className='font-semibold text-[64px] leading-[77.45px] -tracking-[4%]'>Health Japanese Fried Rice</h1>
+                <h1 className='font-semibold text-[64px] leading-[77.45px] -tracking-[4%]'>{heading}</h1>
                 <div className='flex items-center'>
 
                     <div className='person w-fit flex justify-center items-center gap-[18px] pr-[58px]'>

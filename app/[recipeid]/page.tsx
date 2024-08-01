@@ -7,11 +7,11 @@ import Directions from "../components/Directions";
 import ContactUs from "../components/ContactUs";
 import OtherRecipeBottom from "../components/OtherRecipeBottom";
 
-export default function Home() {
+export default function Home({params}: {params: {recipeid: string}}) {
   return (
     <main className="flex w-screen h-auto flex-col items-center py-10 leading-[16.94px] -tracking-[2%] ">
         <Navbar />
-        <Main />
+        <Main heading={params.recipeid}/>
         <Ingredients />
         <Directions />
         <ContactUs />
