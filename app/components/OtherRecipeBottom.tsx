@@ -1,5 +1,7 @@
 import React from 'react'
 import Recipe2 from './Recipe2'
+import { MORERECIPE } from '../constants'
+import Link from 'next/link'
 
 const OtherRecipeBottom = () => {
   return (
@@ -7,10 +9,25 @@ const OtherRecipeBottom = () => {
         <h1 className='text-4xl font-semibold leading-[43.57px] -tracking-[4%]'>You may like these recipe too</h1>
 
         <div className="recipes w-full grid grid-cols-4 gap-10">
-            <Recipe2 imgSrc='/images/recipe21.png' title='Mixed Tropical Fruit Salad with Superfood Boosts ' detailsTitle1='30 Minutes' detailsTitle2='Healthy'/>
-            <Recipe2 imgSrc='/images/recipe22.png' title='Big and Juicy Wagyu Beef Cheeseburger' detailsTitle1='30 Minutes' detailsTitle2='Western'/>
-            <Recipe2 imgSrc='/images/recipe23.png' title='Healthy Japanese Fried Rice with Asparagus' detailsTitle1='30 Minutes' detailsTitle2='Healthy'/>
-            <Recipe2 imgSrc='/images/recipe22.png' title='Cauliflower Walnut Vegetarian Taco Meat' detailsTitle1='30 Minutes' detailsTitle2='Eastern'/>
+
+          {MORERECIPE.filter((recipe, index) => index < 4).map((recipe) => (
+
+            <Link href={{
+                pathname: `${recipe.id}`,
+                query:{
+                    title: recipe.title,
+                    imgSrc: recipe.imgSrc,
+                    detailsTitle2: recipe.detailsTitle2
+                }
+            }} key={recipe.id}>
+                <Recipe2
+                    id={recipe.id}
+                    imgSrc={recipe.imgSrc} 
+                    title={recipe.title} 
+                    detailsTitle1={recipe.detailsTitle1} 
+                    detailsTitle2={recipe.detailsTitle2} />
+                </Link>
+            ))}
         </div>
     </section>
   )

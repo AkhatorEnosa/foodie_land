@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { FaHeart } from 'react-icons/fa'
 
 type RecipeProps = {
+    id: number,
     imgSrc: string,
     title: string,
     detailsTitle1: string,

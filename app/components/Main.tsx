@@ -1,17 +1,25 @@
+'use client'
+
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import PersonIcon from '../../public/images/slider-person.png'
 import { PiForkKnifeFill, PiTimerFill } from 'react-icons/pi'
 import { FiPrinter, FiShare } from 'react-icons/fi'
-import RecipeImage1 from '../../public/images/recipe-img.png'
+// import RecipeImage1 from '../../public/images/recipe-img.png'
 import { FaPlay } from 'react-icons/fa'
+import { useSearchParams } from 'next/navigation'
 
-const Main = ({heading} : {heading: string}) => {
+
+const Main = ({heading, img, detailsTitle2}: {heading: string, img: string, detailsTitle2: string}) => {
+    const searchParams = useSearchParams(); 
+    heading = searchParams.get('title')
+    img = searchParams.get('imgSrc')
+    detailsTitle2 = searchParams.get('detailsTitle2')
   return (
     <section id='main' className='w-full px-20 pb-20'>
         <div className='w-full flex justify-between mb-16'>
             <div className='flex flex-col gap-12'>
-                <h1 className='font-semibold text-[64px] leading-[77.45px] -tracking-[4%]'>{heading}</h1>
+                <h1 className='w-[80%] font-semibold text-[64px] leading-[77.45px] -tracking-[4%]'>{heading}</h1>
                 <div className='flex items-center'>
 
                     <div className='person w-fit flex justify-center items-center gap-[18px] pr-[58px]'>
@@ -40,7 +48,7 @@ const Main = ({heading} : {heading: string}) => {
 
                     <div className='flex gap-4 justify-center items-center px-8 '>
                         <PiForkKnifeFill className='text-2xl'/>
-                        <p className='text-xs leading-[16.94px] -tracking-[2%] text-black/60'>Chicken</p>
+                        <p className='text-xs leading-[16.94px] -tracking-[2%] text-black/60'>{detailsTitle2}</p>
                     </div>
 
                 </div>
@@ -60,7 +68,7 @@ const Main = ({heading} : {heading: string}) => {
                 <div className='absolute text-[#181945] text-[32px] p-11 bg-white/80 z-50 rounded-full'>
                     <FaPlay/>
                 </div>
-                <Image src={RecipeImage1} width={915.21} height={623} alt='image' className='z-10'/>
+                <Image src={img} width={915.21} height={623} alt='image' className='z-10'/>
             </div>
             <div className="info font-medium text-base leading-[21.78px] -tracking-[4%] p-8 bg-[#E7FAFE] rounded-[30px]">
                 <h1 className='font-semibold text-2xl leading-[29.05px]  mb-6'>Nutritional Information</h1>
