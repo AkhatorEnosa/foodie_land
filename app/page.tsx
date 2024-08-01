@@ -1,13 +1,13 @@
 import Image from "next/image";
-import Footer from "./Hompage/Footer";
-import ContactUs from "./Hompage/ContactUs";
-import MoreRecipe from "./Hompage/MoreRecipe";
-import InstaPosts from "./Hompage/InstaPosts";
-import LearnMore from "./Hompage/LearnMore";
-import Recipes from "./Hompage/Recipes";
-import Category from "./Hompage/Category";
-import Hero from "./Hompage/Hero";
-import Navbar from "./Hompage/Navbar";
+import Footer from "./components/Footer";
+import ContactUs from "./components/ContactUs";
+import MoreRecipe from "./components/MoreRecipe";
+import InstaPosts from "./components/InstaPosts";
+import LearnMore from "./components/LearnMore";
+import Recipes from "./components/Recipes";
+import Category from "./components/Category";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (

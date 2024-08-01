@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Navbar from "../Hompage/Navbar";
-import Footer from "../Hompage/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import Main from "./Main";
 import Ingredients from "./Ingredients";
 import Directions from "./Directions";
-import ContactUs from "../Hompage/ContactUs";
+import ContactUs from "../components/ContactUs";
 import OtherRecipeBottom from "./OtherRecipeBottom";
 
 export default function Home() {

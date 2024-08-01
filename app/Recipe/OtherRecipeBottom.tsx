@@ -1,5 +1,5 @@
 import React from 'react'
-import Recipe2 from '../Hompage/Recipe2'
+import Recipe2 from '../components/Recipe2'
 import ImgRecipe1 from '../../public/images/recipe21.png'
 import ImgRecipe2 from '../../public/images/recipe22.png'
 import ImgRecipe3 from '../../public/images/recipe23.png'
