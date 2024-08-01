@@ -17,45 +17,23 @@ const Recipes = () => {
 
         {/* get recipes */}
         {RECIPE1PART1.map((recipe) => (
-
-
-            // Link with url parameters for dynamic routing
-        <Link href={{
-            pathname: `${recipe.id}`,
-             query:{
-                title: recipe.title,
-                imgSrc: recipe.imgSrc,
-                detailsTitle2: recipe.detailsTitle2
-             }
-        }} key={recipe.id}>
             <Recipe
+                key={recipe.id}
                 id={recipe.id}
                 imgSrc={recipe.imgSrc} 
                 title={recipe.title} 
                 detailsTitle1={recipe.detailsTitle1} 
                 detailsTitle2={recipe.detailsTitle2} />
-            </Link>
         ))}
             
         {RECIPE1PART2.map((recipe) => (
-
-
-            // Link with url parameters for dynamic routing
-        <Link href={{
-            pathname: `${recipe.id}`,
-             query:{
-                title: recipe.title,
-                imgSrc: recipe.imgSrc,
-                detailsTitle2: recipe.detailsTitle2
-             }
-        }} key={recipe.id}>
             <Recipe
+                key={recipe.id}
                 id={recipe.id}
                 imgSrc={recipe.imgSrc} 
                 title={recipe.title} 
                 detailsTitle1={recipe.detailsTitle1} 
                 detailsTitle2={recipe.detailsTitle2} />
-            </Link>
         ))}
             <div className='ad relative max-w-[400px] flex flex-col justify-center -items-center text-white'>
                 <Image src={Ad} width={368} height={364} className='z-30' alt='image'/>
@@ -68,23 +46,13 @@ const Recipes = () => {
             
         {RECIPE1PART3.map((recipe) => (
 
-
-            // Link with url parameters for dynamic routing
-        <Link href={{
-            pathname: `${recipe.id}`,
-             query:{
-                title: recipe.title,
-                imgSrc: recipe.imgSrc,
-                detailsTitle2: recipe.detailsTitle2
-             }
-        }} key={recipe.id}>
             <Recipe
+                key={recipe.id}
                 id={recipe.id}
                 imgSrc={recipe.imgSrc} 
                 title={recipe.title} 
                 detailsTitle1={recipe.detailsTitle1} 
                 detailsTitle2={recipe.detailsTitle2} />
-            </Link>
         ))}
         
         </div>

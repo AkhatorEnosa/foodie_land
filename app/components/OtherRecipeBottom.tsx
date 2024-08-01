@@ -12,23 +12,13 @@ const OtherRecipeBottom = () => {
 
           {MORERECIPE.filter((recipe, index) => index < 4).map((recipe) => (
 
-            // Link with url parameters for dynamic routing
-
-            <Link href={{
-                pathname: `${recipe.id}`,
-                query:{
-                    title: recipe.title,
-                    imgSrc: recipe.imgSrc,
-                    detailsTitle2: recipe.detailsTitle2
-                }
-            }} key={recipe.id}>
                 <Recipe2
+                    key={recipe.id}
                     id={recipe.id}
                     imgSrc={recipe.imgSrc} 
                     title={recipe.title} 
                     detailsTitle1={recipe.detailsTitle1} 
                     detailsTitle2={recipe.detailsTitle2} />
-                </Link>
             ))}
         </div>
     </section>
