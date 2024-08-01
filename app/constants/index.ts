@@ -45,7 +45,7 @@
   export const RECIPE1PART3 = [
     {
         id: 6,
-      title: 'ruity Pancake with Orange & Blueberry',
+      title: 'Fruity Pancake with Orange & Blueberry',
       imgSrc: '/images/recipe6.png',
       detailsTitle1: '30 Minutes',
       detailsTitle2:'Sweet',
@@ -59,7 +59,7 @@
     },
     {
         id: 8,
-      title: 'he Creamiest Creamy Chicken and Bacon Pasta',
+      title: 'The Creamiest Creamy Chicken and Bacon Pasta',
       imgSrc: '/images/recipe8.png',
       detailsTitle1: '30 Minutes',
       detailsTitle2: 'Noodles',
