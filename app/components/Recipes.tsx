@@ -13,7 +13,7 @@ const Recipes = () => {
             <h2 className='section-heading'>Simple and tasty recipes</h2>
             <p className='leading-7 w-[90%]'>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
         </div>
-        <div className="recipes w-full grid grid-cols-3 gap-10">
+        <div className="recipes w-full grid gap-10">
 
         {/* get recipes */}
         {RECIPE1PART1.map((recipe) => (

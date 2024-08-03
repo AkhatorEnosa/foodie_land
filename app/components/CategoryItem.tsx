@@ -12,7 +12,7 @@ type CategoryProps = {
 const CategoryItem = ({itemImg, addClass, title, imgClass} : CategoryProps) => {
   return (
     
-    <div className={`${addClass} flex flex-col gap-11 justify-center items-center group pb-[30px] pt-[100px] px-[50px] rounded-[30px]`}>
+    <div className={`${addClass} relative flex flex-col gap-11 justify-center items-center group initial:px-5  pb-[30px] pt-[100px] sm:px-[20px] md:px-[50px] rounded-[30px]`}>
         <Image src={itemImg} width={100} height={100} alt='category-item' className={`${imgClass} absolute -top-[26px] group-hover:-top-[32px] w-[100px] h-[100px] drop-shadow-lg transition-all duration-200`}/>
         <p>{title}</p>
     </div>

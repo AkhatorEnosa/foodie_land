@@ -11,7 +11,7 @@ const Category = () => {
             <span className='capitalize px-[26px] py-5 bg-[#E7FAFE] rounded-2xl'>View all categories</span>
         </div>
         {/* All categories */}
-        <div className="category-items relative flex justify-between w-full">
+        <div className="category-items grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 sm:gap-20 lg:gap-5 xl:justify-between w-full">
             <CategoryItem title='Breakfast' itemImg='/images/cat1.png' addClass='category-item-1' imgClass="item-image-1"/>
             <CategoryItem title='Vegan' itemImg='/images/cat-2.png' addClass='category-item-2' imgClass="item-image-2"/>
             <CategoryItem title='Meat' itemImg='/images/cat-3.png' addClass='category-item-3' imgClass="item-image-3"/>

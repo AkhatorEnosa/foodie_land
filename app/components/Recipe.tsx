@@ -27,7 +27,7 @@ const Recipe = ({id, imgSrc, title, detailsTitle1, detailsTitle2} : RecipeProps)
     <div className="recipe max-w-[400px] px-4 pt-4 pb-8 flex flex-col gap-6 group">
             <div className='relative flex w-[368px] h-[250px] justify-center items-center overflow-clip rounded-[30px]'>
                 <Image src={imgSrc} width={368} height={364} className='z-30' alt='recipe image'/>
-                <span className={like === false ? 'cursor-pointer absolute p-3 bg-white rounded-full text-[#DBE2E5] group-hover:text-[#FF6363] z-50 text-2xl right-5 top-5 transition-all duration-200' : 'absolute p-3 bg-white rounded-full text-[#FF6363] z-50 text-2xl right-5 top-5 cursor-pointer'} onClick={()=>handleLike()}><FaHeart /></span>
+                <span className={like === false ? 'cursor-pointer absolute p-3 bg-white rounded-full text-[#DBE2E5] group-hover:text-[#FF6363] z-40 text-2xl right-5 top-5 transition-all duration-200' : 'absolute p-3 bg-white rounded-full text-[#FF6363] z-40 text-2xl right-5 top-5 cursor-pointer'} onClick={()=>handleLike()}><FaHeart /></span>
             </div>
             
             <Link href={{

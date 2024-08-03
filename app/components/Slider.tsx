@@ -39,7 +39,7 @@ const Slider = () => {
         <div className='relative flex w-full justify-end z-10'>
             <Image src={SliderImage} width={800} height={500} alt='slider main image' className='w-[982px] h-[640px]'/>
         </div>
-        <div className='absolute w-full flex top-[50px] justify-center items-center z-50'>
+        <div className='absolute w-full flex top-[50px] justify-center items-center z-40'>
             <Image src={Badge} width={150} height={150} alt='badge'/>
         </div>
     </div>
