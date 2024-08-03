@@ -6,7 +6,7 @@ import Link from 'next/link'
 const MoreRecipe = () => {
   return (
     <section className="more-recipe w-full py-[180px] px-20 ">
-        <div className='flex justify-between items-center gap-[155px] mb-20'>
+        <div className='flex flex-col md:flex-row text-center md:text-left justify-between items-center gap-5 md:gap-[155px] mb-20'>
             <h1 className="section-heading">Try this delicious recipe to make your day</h1>
             <p className='leading-7'>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
         </div>

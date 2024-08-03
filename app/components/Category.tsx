@@ -5,7 +5,7 @@ import CategoryItem from './CategoryItem'
 // Category section
 const Category = () => {
   return (
-    <section className='flex flex-col w-full h-full px-20 gap-20 mb-[180px]'>
+    <section className='flex flex-col w-full h-full px-10 md:px-20 gap-20 mb-[180px]'>
         <div className="category-header flex justify-between items-center">
             <h1 className='section-heading'>Categories</h1>
             <span className='capitalize px-[26px] py-5 bg-[#E7FAFE] rounded-2xl'>View all categories</span>

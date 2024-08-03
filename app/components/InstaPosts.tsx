@@ -15,7 +15,7 @@ const InstaPosts = () => {
             <h1 className='section-heading'>Check out @foodieland on Instagram</h1>
             <p className='leading-7 w-fit'>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <br/> magna aliqut enim ad minim </p>
         </div>
-        <div className="insta-images flex justify-center items-center gap-10 w-full">
+        <div className="insta-images w-full grid grid-cols-2 md:flex justify-center items-center gap-10 w-full">
             <Image src={Insta1} width={290} height={445.44} alt='instagram post'/>
             <Image src={Insta2} width={290} height={445.44} alt='instagram post'/>
             <Image src={Insta3} width={290} height={445.44} alt='instagram post'/>
