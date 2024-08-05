@@ -10,10 +10,10 @@ const Recipes = () => {
   return (
     <section className='flex flex-col w-full h-auto items-center justify-center px-20 text-center gap-24 mb-[143px]'>
         <div className="recipes-header flex flex-col w-[60%] gap-6 items-center">
-            <h2 className='section-heading'>Simple and tasty recipes</h2>
+            <h2 className='section-heading text-3xl lg:text-5xl'>Simple and tasty recipes</h2>
             <p className='leading-7 w-[90%]'>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
         </div>
-        <div className="recipes w-full grid gap-10">
+        <div className="recipes w-full grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-10">
 
         {/* get recipes */}
         {RECIPE1PART1.map((recipe) => (
@@ -35,7 +35,7 @@ const Recipes = () => {
                 detailsTitle1={recipe.detailsTitle1} 
                 detailsTitle2={recipe.detailsTitle2} />
         ))}
-            <div className='ad relative max-w-[400px] flex flex-col justify-center -items-center text-white'>
+            <div className='ad relative max-w-[400px] flex flex-col justify-center -items-center text-white z-30'>
                 <Image src={Ad} width={368} height={364} className='z-30' alt='image'/>
                 <div className='absolute flex flex-col justify-center items-center z-50'>
                     <p className='ad-bold font-normal text-2xl'>Don’t forget to eat healthy food</p>

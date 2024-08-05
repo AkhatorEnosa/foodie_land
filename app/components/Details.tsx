@@ -12,7 +12,7 @@ type detailsProps = {
 // reusable component for recipe time and type
 const Details = ({ title1, title2, background, padding}: detailsProps) => {
   return (
-    <div className={`w-fit flex gap-6 justify-center items-center ${padding} text-sm font-medium`}>
+    <div className={`w-fit flex gap-6 justify-center items-center ${padding} text-xs lg:text-sm font-medium`}>
         <div className={`flex gap-[10px] justify-center items-center ${padding} ${background} rounded-[30px]`}>
           <PiTimerFill className='text-2xl'/> <span>{title1}</span>
         </div>
