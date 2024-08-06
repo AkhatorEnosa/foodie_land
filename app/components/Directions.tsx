@@ -4,7 +4,7 @@ import DirectionList from './DirectionList'
 // Directions section
 const Directions = () => {
   return (
-    <section className="w-full directions px-20 mb-12">
+    <section className="w-full directions px-10 md:px-20 mb-12 mt-20">
         <div className=''>
             <h1 className='mb-12 text-[36px] font-semibold leading-[43.57px] -tracking-[4%]'>Directions</h1>
             <div className="flex flex-col">

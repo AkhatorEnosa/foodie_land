@@ -8,16 +8,16 @@ import Rucola from '../../public/images/rucola-png.png'
 //Contact us section
 const ContactUs = () => {
   return (
-    <section className="contact-us w-full px-20 mb-[160px]">
-        <div className='relative flex flex-col items-center justify-center bg-[#E7F9FD] rounded-[60px] py-20 gap-16 overflow-clip'>
+    <section className="contact-us w-full px-0 md:px-20 mb-[160px] z-30">
+        <div className='relative flex flex-col items-center justify-center bg-[#E7F9FD] md:rounded-[60px] py-20 gap-16 overflow-clip'>
             <div className='w-[70%] flex flex-col justify-center items-center text-center gap-6'>
                 <h1 className="section-heading text-3xl lg:text-5xl">Deliciousness to your inbox</h1>
                  <p className='leading-7 w-fit'>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore <br/> magna aliqut enim ad minim </p>
             </div>
-            <div className='w-[480px] p-[10px] bg-white flex justify-between items-center text-sm leading-[16.94px] -tracking-[2%] rounded-3xl z-50 shadow-lg'>
+            <div className='md:w-[480px] p-[10px] bg-white flex justify-between items-center text-sm leading-[16.94px] -tracking-[2%] rounded-3xl z-50 shadow-lg'>
                 <input type="text" placeholder='Your email address...' className='px-[22px] outline-none border-none z-50 placeholder:text-black/40'/>
 
-                <div role="button" className='flex justify-center w-fit items-center px-[46px] py-[22px] bg-black text-white rounded-2xl z-50'>
+                <div role="button" className='flex justify-center w-fit items-center px-10 md:px-[46px] py-[22px] bg-black text-white rounded-2xl z-50'>
                     Subscribe
                 </div>
             </div>

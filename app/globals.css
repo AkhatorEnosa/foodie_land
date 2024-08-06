@@ -11,8 +11,8 @@
   font-style: normal;
 }
 
-.recipes {
-  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+.menu-toggle {
+  z-index: 1000px;
 }
  
 /* width */

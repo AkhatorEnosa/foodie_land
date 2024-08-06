@@ -21,7 +21,7 @@ const DirectionList = ({title, num, paragraph1, img, listImage, paragraph2} : Di
             <div className={img ===  true ? 'flex flex-col gap-12 leading-[26px]' : 'flex flex-col leading-[26px]'}>
 
                 <p>{paragraph1}</p>
-                <div className='w-fit rounded-[20px] overflow-clip'>
+                <div className='w-fit md:rounded-[20px] overflow-clip'>
                     {listImage && <Image src={listImage} width={792} height={400} alt='image'/>}
                 </div>
 

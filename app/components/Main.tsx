@@ -16,13 +16,13 @@ const Main = () => {
     const img = searchParams.get('imgSrc');
     
   return (
-    <section id='main' className='w-full px-20 pb-20'>
-        <div className='w-full flex justify-between mb-16'>
-            <div className='flex flex-col gap-12'>
-                <h1 className='w-[80%] font-semibold text-[64px] leading-[77.45px] -tracking-[4%]'>{searchParams.get('title')}</h1>
-                <div className='flex items-center'>
+    <section id='main' className='w-full px-10 md:px-20 pb-20 mt-20'>
+        <div className='w-full flex flex-col lg:grid grid-cols-7 gap-10 justify-between mb-16'>
+            <div className='col-span-6 flex flex-col gap-12'>
+                <h1 className='w-[80%] font-semibold text-5xl md:text-[64px] md:leading-[77.45px] -tracking-[4%]'>{searchParams.get('title')}</h1>
+                <div className='flex flex-col gap-5 md:gap-0 md:flex-row md:items-center'>
 
-                    <div className='person w-fit flex justify-center items-center gap-[18px] pr-[58px]'>
+                    <div className='person w-fit flex md:justify-center items-center gap-[18px] pr-[58px]'>
                         <Image src={PersonIcon} width={50} height={50} alt='slider person ' className='rounded-full'/>
                         <div className='flex flex-col'>
                             <p className='font-bold leading-[19.36px]'>John Smith</p>
@@ -30,7 +30,7 @@ const Main = () => {
                         </div>
                     </div>
 
-                    <div className='flex gap-4 justify-center items-center px-8 border-l-[1px] border-black/10'>
+                    <div className='flex gap-4 md:justify-center= items-center md:px-8 border-l-[1px] border-black/10'>
                         <PiTimerFill className='text-2xl'/>
                         <div className='flex flex-col gap-2'>
                             <p className='text-xs leading-[12.52px] tracking-widest'>PREP TIME</p>
@@ -38,7 +38,7 @@ const Main = () => {
                         </div>
                     </div>
 
-                    <div className='flex gap-4 justify-center items-center px-8 border-l-[1px] border-r-[1px] border-black/10'>
+                    <div className='flex gap-4 md:justify-center items-center md:px-8 border-l-[1px] border-r-[1px] border-black/10'>
                         <PiTimerFill className='text-2xl'/>
                         <div className='flex flex-col gap-2'>
                             <p className='text-xs leading-[12.52px] tracking-widest'>COOK TIME</p>
@@ -46,14 +46,14 @@ const Main = () => {
                         </div>
                     </div>
 
-                    <div className='flex gap-4 justify-center items-center px-8 '>
+                    <div className='flex gap-4 md:justify-center items-center md:px-8 '>
                         <PiForkKnifeFill className='text-2xl'/>
                         <p className='text-xs leading-[16.94px] -tracking-[2%] text-black/60'>{searchParams.get('detailsTitle2')}</p>
                     </div>
 
                 </div>
             </div>
-            <div className='flex gap-8 justify-center items-center'>
+            <div className='col-span-1 w-full flex gap-8 lg:justify-end items-center'>
                 <div className="print p-7 bg-[#E7FAFE] rounded-full">
                     <FiPrinter className='text-2xl'/>
                 </div>
@@ -63,14 +63,14 @@ const Main = () => {
             </div>
         </div>
 
-        <div className='flex justify-between items-center mb-20'>
-            <div className='relative flex justify-center items-center w-[840px] h-[600px] overflow-clip rounded-[30px]'>
-                <div className='absolute text-[#181945] text-[32px] hover:text-5xl p-11 bg-white/80 z-50 duration-200 transition-all rounded-full'>
+        <div className='flex flex-col lg:flex-row lg:justify-between gap-10 lg:gap-5 items-center mb-20'>
+            <div className='relative flex justify-center items-center w-full lg:w-[840px] lg:h-[600px] overflow-clip rounded-[30px]'>
+                <div className='absolute text-[#181945] text-[32px] hover:text-5xl p-11 bg-white/80 z-30 duration-200 transition-all rounded-full'>
                     <FaPlay/>
                 </div>
                 <Image src={String(img)} width={915.21} height={623} alt='image' className='z-10'/>
             </div>
-            <div className="info font-medium text-base leading-[21.78px] -tracking-[4%] p-8 bg-[#E7FAFE] rounded-[30px]">
+            <div className="w-full lg:w-auto info font-medium text-base leading-[21.78px] -tracking-[4%] p-8 bg-[#E7FAFE] md:rounded-[30px] shadow-md md:shadow-none">
                 <h1 className='font-semibold text-2xl leading-[29.05px]  mb-6'>Nutritional Information</h1>
                 <p className='w-full flex justify-between text-black/60 border-b-[1px] pb-4 border-black/10'>Calories <span className='text-black'>219.9 kcal</span></p>
                 <p className='w-full flex justify-between text-black/60 border-b-[1px] pb-4 border-black/10'>Total Fat <span className='text-black'>10.7 g</span></p>

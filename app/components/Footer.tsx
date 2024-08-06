@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
 // Footer section
 const Footer = () => {
   return (
-    <footer className='w-full flex flex-col px-20 gap-24'>
+    <footer className='w-full flex flex-col px-10 md:px-20 gap-24'>
         <div className='top-footer flex flex-col lg:flex-row gap-10 lg:justify-between lg:items-center'>
             <div className="top-left flex flex-col gap-4">
                 <h1 className='logo text-2xl font-normal leading-[30px]'>Foodieland<span className='text-orange-500'>.</span></h1>
