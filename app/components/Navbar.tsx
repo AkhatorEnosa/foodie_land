@@ -17,8 +17,8 @@ const Navbar = () => {
     }
 
   return (
-    <section role='navbar' className='fixed top-0 py-10 lg:py-0 lg:relative w-full lg:mb-20 bg-white shadow-sm lg:shadow-none z-50'>
-      <div className='w-full flex justify-between px-10 md:px-20 items-center '>
+    <section role='navbar' className='fixed top-0 py-10 lg:py-0 lg:relative w-full lg:mb-20 bg-white shadow-sm lg:shadow-none z-40'>
+      <div className='w-full flex justify-between px-10 md:px-20 items-center'>
         <Link href='/'>
             <h1 className='logo text-2xl font-normal leading-[30px]'>Foodieland<span className='text-orange-500'>.</span></h1>
         </Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
       </div>
 
       {/* Responsive Nav */}
-      <div className={nav === false ? `fixed lg:hidden min-w-[50%] h-[100%] bg-white top-0 py-10 px-10 gap-20 shadow-md flex flex-col items-start text-left z-40 opacity-0` : `fixed lg:hidden min-w-[50%] h-[100%] bg-white top-0 py-10 px-10 gap-20 shadow-md flex flex-col items-start text-left z-40 opacity-100 transition-all duration-200`}>
+      <div className={nav === false ? `hidden` : `fixed lg:hidden min-w-[50%] h-[100%] bg-white top-0 py-10 px-10 md:px-20 gap-20 shadow-md flex flex-col items-start text-left z-40 -left-0 opacity-100 transition-all duration-200`}>
             <Link href='/'>
                 <h1 className='logo text-2xl font-normal leading-[30px]'>Foodieland<span className='text-orange-500'>.</span></h1>
             </Link>

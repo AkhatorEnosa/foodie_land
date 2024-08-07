@@ -37,7 +37,7 @@ const Recipe2 = ({id, imgSrc, title, detailsTitle1, detailsTitle2} : RecipeProps
                 imgSrc: imgSrc,
                 detailsTitle2: detailsTitle2
             }
-        }}>
+        }} className='active:text-orange-500'>
             <div className='w-full text-lg leading-[26px] mb-6 -tracking-[-4%] text-left group-hover:underline'>
                 <p className="recipe-title z-40">{title}</p>
             </div>

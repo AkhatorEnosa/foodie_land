@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 const Recipes = () => {
   return (
-    <section className='flex flex-col w-full h-auto items-center justify-center px-20 text-center gap-24 mb-[143px]'>
+    <section className='flex flex-col w-full h-auto items-center justify-center px-20 text-center gap-24 mb-[143px] z-30'>
         <div className="recipes-header flex flex-col w-[60%] gap-6 items-center">
             <h2 className='section-heading text-3xl lg:text-5xl'>Simple and tasty recipes</h2>
             <p className='leading-7 w-[90%]'>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>

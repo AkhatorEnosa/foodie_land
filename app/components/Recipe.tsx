@@ -37,9 +37,9 @@ const Recipe = ({id, imgSrc, title, detailsTitle1, detailsTitle2} : RecipeProps)
                     imgSrc: imgSrc,
                     detailsTitle2: detailsTitle2
                 }
-            }}>
-                <div className='w-full text-2xl -tracking-[-4%] text-center md:text-left group-hover:underline cursor-pointer'>
-                    <p className="recipe-title z-40">{title}</p>
+            }} className='active:text-orange-500'>
+                <div className='w-full text-2xl -tracking-[-4%] text-center md:text-left group-hover:underline cursor-pointer z-50'>
+                    <p className="recipe-title">{title}</p>
                 </div>
             
             </Link>
